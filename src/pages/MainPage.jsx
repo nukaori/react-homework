@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { TripList } from "../components/TripList";
-import { trips } from "../helpers/trips";
 
-export const MainPage = () => {
+export const MainPage = ({ trips }) => {
     const allTrips = [...trips]
     const [filteredTrips, setFilteredTrips] = useState(allTrips)
 

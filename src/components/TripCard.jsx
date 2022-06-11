@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"
 
 export const TripCard = ({ trip }) => {
 
@@ -18,7 +19,7 @@ export const TripCard = ({ trip }) => {
                     <strong className="trip-price__value">{trip.price} $</strong>
                 </div>
             </div>
-            <a href={"/trip/:" + trip.id} className="button">Discover a trip</a>
+            <Link to={"/trip/:" + trip.id} className="button">Discover a trip</Link>
         </li>
     )
 }

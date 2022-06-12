@@ -19,7 +19,7 @@ export const MainPage = ({ trips }) => {
                 setFilteredTrips(allTrips.filter(trip => trip.duration >= 5 && trip.duration < 10))
                 break;
             case "10_x":
-                setFilteredTrips(allTrips.filter(trip => trip.duration >= 5))
+                setFilteredTrips(allTrips.filter(trip => trip.duration >= 10))
                 break;
             default:
                 setFilteredTrips(allTrips)
